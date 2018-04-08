@@ -2,8 +2,63 @@
 <html>
 <head>
 	<title>CSS Grids</title>
+	<style>
+		.main {
+			/*
+			grid-column-gap: 1em;
+			grid-row-gap: 1em;
+			*/
+			grid-gap: 1em;
+		}
+		.wrapper{
+			display: grid;
+			grid-template-columns: 70% 30%;
+		}
+		.wrapper > div{
+			background: #eee;
+			padding: 1em;
+		}
+		.wrapper > div:nth-child(odd) {
+			background: #ddd;
+		}
+		.wrapper2{
+			display: grid;
+			grid-template-columns: 30% 60% 10%;
+		}
+		.wrapper2 > div{
+			background: #eee;
+			padding: 1em;
+		}
+		.wrapper2 > div:nth-child(odd) {
+			background: #ddd;
+		}
+	</style>
 </head>
 <body>
-
+	<div class="wrapper main">
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut voluptates vero, reprehenderit assumenda at, nemo debitis, perferendis veritatis voluptas blanditiis porro earum aliquid. Perferendis alias veniam, odio sequi, eius aliquam voluptatum officiis harum, doloremque omnis molestiae dolores vitae autem vel magnam, soluta magni quasi quaerat labore voluptatibus. Ex nihil assumenda rerum iste possimus voluptate facere distinctio repellat aperiam, commodi, non fugiat quo, harum ipsum natus sit doloremque delectus! Non eveniet, velit recusandae totam eius voluptatum deserunt ut eligendi magni sint.
+		</div>
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat aspernatur, assumenda, eveniet est possimus debitis soluta, non nihil animi nostrum dolorum rem quibusdam! Qui facilis commodi voluptatum voluptatibus quidem delectus.
+		</div>
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut voluptates vero, reprehenderit assumenda at, nemo debitis, perferendis veritatis voluptas blanditiis porro earum aliquid. Perferendis alias veniam, odio sequi, eius aliquam voluptatum officiis harum, doloremque omnis molestiae dolores vitae autem vel magnam, soluta magni quasi quaerat labore voluptatibus. Ex nihil assumenda rerum iste possimus voluptate facere distinctio repellat aperiam, commodi, non fugiat quo, harum ipsum natus sit doloremque delectus! Non eveniet, velit recusandae totam eius voluptatum deserunt ut eligendi magni sint.
+		</div>
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat aspernatur, assumenda, eveniet est possimus debitis soluta, non nihil animi nostrum dolorum rem quibusdam! Qui facilis commodi voluptatum voluptatibus quidem delectus.
+		</div>
+	</div>
+	<div class="wrapper2 main">
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, atque suscipit ipsam vel inventore eligendi molestiae molestias quod ullam nisi necessitatibus, maxime enim iusto et provident illo, minima vero dignissimos excepturi. Itaque, voluptates, nam! Eos vel, earum accusamus, excepturi inventore perferendis, ex nam velit ad rerum debitis eveniet molestias cupiditate.
+		</div>
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, eaque, dolorum. Ratione ipsum sint ducimus quaerat vel enim assumenda nobis aliquid doloremque, officiis odio, totam! Molestiae optio quae dolor ad ea temporibus illum, ullam accusamus, sequi vel, quo assumenda reprehenderit sapiente. Vitae cum corrupti provident nihil, fuga minima ex magnam, officia ad voluptatem dolorum, nulla ipsam cumque maiores maxime omnis officiis itaque, eius nobis eligendi aliquam dolor! Totam modi, dicta!
+		</div>
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis culpa explicabo libero praesentium nam cum facilis, consequatur beatae aspernatur, laborum non temporibus, ea fugit ad accusamus porro. Ipsum reiciendis animi dolores adipisci sed tenetur enim modi harum magnam doloremque vel recusandae, qui laborum deserunt quisquam mollitia esse, ab libero neque dignissimos nisi? Odio magni, assumenda magnam itaque ducimus ipsum facilis.
+		</div>
+</div>
 </body>
 </html>
